@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "leaflet": "^1.5.1",
+    "pigeon-maps": "^0.14.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-google-maps": "^9.4.5",
+    "react-leaflet": "^2.4.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },

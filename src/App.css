@@ -7,3 +7,7 @@
 .ResNav{
     border: 2px solid black;
 }
+.map{
+    height: 50vh;
+    width: 100vw;
+}

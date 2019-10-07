@@ -2,8 +2,6 @@ import React from "react"
 import './FrontPage.css';
 import {Link} from "react-router-dom"
 
-
-
 function FrontPage(){
     const style = {
         color:'black',

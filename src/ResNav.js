@@ -6,7 +6,7 @@ function ResNav() {
         <div className="ResNav" >
             
             <h1>RestrantName Foursquare</h1>
-            <p1>iconImge</p1><p1>    iconMap</p1><p1>      icon</p1>            
+            <p>iconImge</p><p>    iconMap</p><p>      icon</p>            
 
         </div>
 

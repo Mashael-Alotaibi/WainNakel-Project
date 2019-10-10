@@ -4,17 +4,16 @@ import {Link} from "react-router-dom"
 
 function FrontPage(){
     const style = {
-        color:'black',
-        textDecoration: 'none'
+        color: 'white',
+        textDecoration: 'none',
+        fontSize: '40px'
     }
     return(
-        <div className="FrontPage" >
-            <h1>FrontPage</h1>
-            
-            <button  > <Link style={style} to='/optionpage'>Suggestion</Link></button>
-            
-            
-            
+        <div className="home-page" >
+            <div className="home-contener" >
+                <img src="https://wainnakel.com/images/logo.png" />
+                <button className="home-btn" > <Link style={style} to='/optionpage'>اقترح</Link></button>
+            </div>
         </div>
         
     )

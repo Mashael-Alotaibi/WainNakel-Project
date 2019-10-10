@@ -2,12 +2,97 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
+}
+.second-page {
+    background-image: url("2681852.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.ResNav{
-    border: 2px solid black;
+ .second-page .NavBar{
+    height: 65px;
+    width: 100%;
+    background-color: #2e6963;
+    padding: 10px;
+    font-size: 15px;
 }
-.map{
+.second-page .NavBar .contener img{
+    padding: 5px;
+}
+
+.second-page .contener {
+    margin-left: 350px;
+    margin-right:350px ;
+    
+}
+
+.second-page .contener .ResNav{
+    text-align: center;
+    height: 150px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.second-page .ResNav p{
+    font-size: 22px;
+    font-family: Arial
+}
+.second-page .ResNav h1{
+    padding: 10px;
+}
+.second-page .contener .map-box .map{
     height: 50vh;
-    width: 100vw;
+    width: 100%;
+    float: left;
+}
+.map-box{
+    position: relative;
+}
+.btn-suggestion{
+    background-color: #2e6963;
+    width:330px;
+    height:60px;
+    display: block;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    z-index: 1000;
+    top:320px;
+    left:200px;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+ .second-page .contener .map-box .btn-googleMap{
+    
+    width:200px;
+    height:50px;
+    display: block;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    left: 260px;
+    top: 200px;
+    z-index: 800;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+.second-page .contener  a{
+    text-decoration: none;
+    color:#2e6963;
+    text-align: center;
+}
+.second-page .contener .ResNav p{
+    color: gray;
+}
+
+.footer{
+    
+    height: 550px;
+    background-color: rgb(255, 255, 255, 0.8);
 }

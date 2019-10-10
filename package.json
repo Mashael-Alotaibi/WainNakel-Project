@@ -2,6 +2,7 @@
   "name": "wain-nakel-app",
   "version": "0.1.0",
   "private": true,
+  "proxy":"https://wainnakel.com/api/v1/GenerateFS.php",
   "dependencies": {
     "leaflet": "^1.5.1",
     "pigeon-maps": "^0.14.0",

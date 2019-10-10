@@ -8,8 +8,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route path="/frontpage" component={FrontPage} />
-        <Route path="/optionpage" component={OptionPage} />
+        <Switch>
+          <Route exact path="/"  component={FrontPage}/>
+          <Route  path="/frontpage"  component={FrontPage} />
+          <Route  path="/optionpage" component={OptionPage} />
+        </Switch>
+       
       </div>
     </Router>
   );

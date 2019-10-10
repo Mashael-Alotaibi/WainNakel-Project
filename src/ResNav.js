@@ -1,15 +1,15 @@
 import React from "react"
 import './App.css';
 
-function ResNav() {
+
+function ResNav(props) {
     return (
-        <div className="ResNav" >
             
-            <h1>RestrantName Foursquare</h1>
-            <p>iconImge</p><p>    iconMap</p><p>      icon</p>            
-
-        </div>
-
+        <div className="ResNav" >
+                <h1><a href={props.link} target="_blank" >{props.name}</a></h1 >
+                <p>{props.cat}</p>
+                <p>{props.rating} /10</p>
+        </div>   
     )
 }
 

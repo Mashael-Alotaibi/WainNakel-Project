@@ -13,7 +13,7 @@ var myIcon = L.icon({
     popupAnchor: [0, -41],
 });
 
-class OptionPage extends React.Component {
+class SecondPage extends React.Component {
     constructor() {
         super();
         this.state = { 
@@ -31,11 +31,12 @@ class OptionPage extends React.Component {
             rating:"",
             id:"",
             image:[],
-            
+            isLoading:false,
          };
          this.handleClick=this.handleClick.bind(this)
     }
     componentDidMount(){
+        this.setState({ isLoading:true})
         fetch('?uid=26.2716025,50.2017993&get_param')
             .then(response => response.json())
             .then(response =>{
@@ -48,6 +49,7 @@ class OptionPage extends React.Component {
                     rating: response.rating,
                     id: response.id,
                     image:response.image,
+                    isLoading:false,
                 })
             
             } )
@@ -93,13 +95,14 @@ class OptionPage extends React.Component {
         const CurrentPosition = [this.state.Urerlocation.lat, this.state.Urerlocation.lng];
         const resUrl = "https://www.google.com/maps?q=" + this.state.reslat + "," + this.state.reslng;
         const position = [this.state.reslat, this.state.reslng];
+        
         return (
             <div className="second-page">
                 <NavBar />
                
             <div className="contener" >
                 
-                <ResNav key={this.state.id} name={this.state.name} link={this.state.link} cat={this.state.cat} rating={this.state.rating} />
+                <ResNav key={this.state.id} name={this.state.name} link={this.state.link} cat={this.state.cat} rating={this.state.rating} isLoading={this.state.isLoading}/>
                 <div className="map-box">
                         <Map className="map" center={position} zoom={this.state.zoom}>
                             <TileLayer
@@ -118,9 +121,11 @@ class OptionPage extends React.Component {
                         <button className="btn-suggestion" onClick={this.handleClick} >اقتراح اخر </button>
                         
                             
-                        <a className="btn-googleMap" href={resUrl} target="_blank" >Google maps فتح في </a>
+                        <a className="btn-googleMap" href={resUrl} target="_blank" > <button>فتح في Google maps</button></a>
+                        <div className="resImg" >
+                            <img src={this.state.image} />
+                        </div>
                         
-                        <img src={this.state.image} />
                 </div>
                 <div className="footer" >
                         
@@ -135,4 +140,4 @@ class OptionPage extends React.Component {
 }
 
  
-export default OptionPage ;
+export default SecondPage ;

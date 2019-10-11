@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import FrontPage from "./FrontPage"
-import OptionPage from "./OptionPage"
+import HomePage from "./HomePage"
+import SecondPage from "./SecondPage"
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/"  component={FrontPage}/>
-          <Route  path="/frontpage"  component={FrontPage} />
-          <Route  path="/optionpage" component={OptionPage} />
+          <Route exact path="/" component={HomePage}/>
+          <Route path="/home" component={HomePage} />
+          <Route  path="/option" component={SecondPage} />
         </Switch>
        
       </div>

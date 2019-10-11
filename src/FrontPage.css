@@ -19,7 +19,7 @@
     position: relative;
 }
 .home-btn{
-    background-color: #2e6963;
+    background-color: #0b9496;
     width:400px;
     height:80px;
     display: block;
@@ -32,6 +32,9 @@
     font-size: 25px;
     cursor: pointer;
     
+}
+.home-btn:hover{
+    background-color: #2f9ea0;
 }
 .home-page .home-contener img{
    position: absolute;

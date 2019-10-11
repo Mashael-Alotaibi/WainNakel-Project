@@ -6,7 +6,7 @@ function NavBar() {
     return(
         <div className="NavBar" >
             <div className="contener">
-                <img src="https://wainnakel.com/images/logo-header.png" />
+                <a href="/home" ><img src="https://wainnakel.com/images/logo-header.png" /></a>
             </div>
         </div> 
     )  

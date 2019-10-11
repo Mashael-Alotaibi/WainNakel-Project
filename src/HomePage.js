@@ -2,7 +2,7 @@ import React from "react"
 import './FrontPage.css';
 import {Link} from "react-router-dom"
 
-function FrontPage(){
+function HomePage(){
     const style = {
         color: 'white',
         textDecoration: 'none',
@@ -12,7 +12,9 @@ function FrontPage(){
         <div className="home-page" >
             <div className="home-contener" >
                 <img src="https://wainnakel.com/images/logo.png" />
-                <button className="home-btn" > <Link style={style} to='/optionpage'>اقترح</Link></button>
+                <button className="home-btn" > <Link style={style} to='/option'>اقترح</Link></button>
+                
+                
             </div>
         </div>
         
@@ -20,4 +22,4 @@ function FrontPage(){
 }
 
 
-export default FrontPage;
+export default HomePage;

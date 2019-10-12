@@ -1,5 +1,5 @@
 import React from "react"
-import './FrontPage.css';
+import './HomePage.css';
 import {Link} from "react-router-dom"
 
 function HomePage(){
@@ -12,12 +12,9 @@ function HomePage(){
         <div className="home-page" >
             <div className="home-contener" >
                 <img src="https://wainnakel.com/images/logo.png" />
-                <button className="home-btn" > <Link style={style} to='/option'>اقترح</Link></button>
-                
-                
+                <Link style={style} to='/option'><button className="home-btn">اقترح</button></Link>
             </div>
-        </div>
-        
+        </div>  
     )
 }
 

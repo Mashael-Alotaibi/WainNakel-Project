@@ -29,8 +29,9 @@
     z-index: 1000;
     top:320px;
     left:180px;
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
+    color:white;
     
 }
 .home-btn:hover{
